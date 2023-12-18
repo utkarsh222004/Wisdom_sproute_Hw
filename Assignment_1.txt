@@ -1,0 +1,49 @@
+#Write a program to print the first 10 even numbers using a loop
+a=10
+for i in range(a+1):
+    if i% 2==0:
+        print(i)
+
+#Write a program that takes a list of numbers and returns a new list with only the even numbers.
+input_list = []
+n = int(input("Enter number of values:"))
+ 
+for i in range(n):
+    a= int(input("Enter value:"))
+    input_list.append(a)
+
+even_no=[x for x in input_list if x % 2 == 0]
+print("NEW_list :",even_no)
+
+
+
+
+#Implement a program that compares three numbers and finds the largest among them using if-else statements.
+a=int(input("Enter number the 1 st number:"))
+b=int(input("Enter number the 2 nd number:"))
+c=int(input("Enter number the 3 rd number:"))
+
+if a>b:
+    if a>c:
+        print("a is largest")
+    else:
+        print("c is largest")
+ 
+elif b>a:
+    if b>c:
+        print("b is largest")
+    else:
+        print("c is largest")
+
+
+
+#Create a program to generate the Fibonacci sequence up to a given number using a loop.
+n = int(input("Enter the number :"))
+a= 0
+b= 1
+print(a)
+print(b)
+for x in range(1,n-1):
+    c= a+ b
+    print(c)
+    a,b=b,c
